@@ -1,0 +1,300 @@
+.playerWrap {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 1.2rem;
+    box-shadow: 0 2px 12px #764ba233;
+    padding: 1.2rem 2rem;
+    gap: 1.5rem;
+    margin: 1.5rem auto 0 auto;
+    max-width: 700px;
+    min-height: 64px;
+    position: relative;
+}
+
+.albumArt {
+    width: 64px;
+    height: 64px;
+    border-radius: 0.8rem;
+    object-fit: cover;
+    box-shadow: 0 1px 4px #764ba222;
+}
+
+.songInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.songTitle {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.2rem;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+
+.songArtist {
+    font-size: 0.97rem;
+    color: #764ba2;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.ctrlBtn {
+    background: linear-gradient(90deg, #764ba2 0%, #43cea2 100%);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #764ba233;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.ctrlBtn:hover {
+    background: linear-gradient(90deg, #43cea2 0%, #764ba2 100%);
+    transform: scale(1.12);
+}
+
+@media (max-width: 600px) {
+    .playerWrap {
+        flex-direction: column;
+        gap: 0.7rem;
+        padding: 1rem 0.5rem;
+    }
+
+    .albumArt {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.albumArtSmall {
+    width: 40px;
+    height: 40px;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    box-shadow: 0 1px 4px #764ba222;
+    margin-right: 0.7rem;
+}
+
+.progressRow {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.progressBar {
+    flex: 1;
+    appearance: none;
+    height: 4px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #764ba2 0%, #43cea2 100%);
+    outline: none;
+    margin: 0 0.3rem;
+    transition: background 0.2s;
+}
+
+.progressBar::-webkit-slider-thumb {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #764ba2;
+    cursor: pointer;
+    box-shadow: 0 1px 4px #764ba233;
+    border: none;
+}
+
+.progressBar::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #764ba2;
+    cursor: pointer;
+    box-shadow: 0 1px 4px #764ba233;
+    border: none;
+}
+
+.progressBar::-ms-thumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #764ba2;
+    cursor: pointer;
+    box-shadow: 0 1px 4px #764ba233;
+    border: none;
+}
+
+.progressBar:focus {
+    outline: none;
+}
+
+.time {
+    font-size: 0.92rem;
+    color: #888;
+    min-width: 36px;
+    text-align: center;
+}
+
+.volumeRow {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.4rem;
+}
+
+.volumeLabel {
+    font-size: 1.1rem;
+    color: #888;
+}
+
+.volumeBar {
+    flex: 1;
+    appearance: none;
+    height: 4px;
+    border-radius: 2px;
+    background: #eee;
+    outline: none;
+    margin: 0 0.3rem;
+    transition: background 0.2s;
+}
+
+.volumeBar::-webkit-slider-thumb {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #764ba2;
+    cursor: pointer;
+    box-shadow: 0 1px 4px #764ba233;
+    border: none;
+}
+
+.volumeBar::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #764ba2;
+    cursor: pointer;
+    box-shadow: 0 1px 4px #764ba233;
+    border: none;
+}
+
+.volumeBar::-ms-thumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #764ba2;
+    cursor: pointer;
+    box-shadow: 0 1px 4px #764ba233;
+    border: none;
+}
+
+.volumeBar:focus {
+    outline: none;
+}
+
+.queueIndicator {
+    margin-top: 0.4rem;
+    font-size: 0.95rem;
+    color: #764ba2;
+    font-weight: 600;
+    text-align: right;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: transparent;
+    border: none;
+    color: #764ba2;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 2;
+    padding: 2px;
+    transition: color 0.2s;
+}
+
+.closeBtn:hover {
+    color: #d32f2f;
+}
+
+.volumeControl {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 1rem;
+}
+
+.volumeSlider {
+    width: 80px;
+    appearance: none;
+    height: 4px;
+    border-radius: 2px;
+    background: #eee;
+    outline: none;
+    transition: background 0.2s;
+}
+
+.volumeSlider::-webkit-slider-thumb {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #764ba2;
+    cursor: pointer;
+    box-shadow: 0 1px 4px #764ba233;
+    border: none;
+}
+
+.volumeSlider::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #764ba2;
+    cursor: pointer;
+    box-shadow: 0 1px 4px #764ba233;
+    border: none;
+}
+
+.volumeSlider::-ms-thumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #764ba2;
+    cursor: pointer;
+    box-shadow: 0 1px 4px #764ba233;
+    border: none;
+}
+
+.volumeSlider:focus {
+    outline: none;
+}
+
+@media (max-width: 600px) {
+    .volumeControl {
+        margin-left: 0;
+        margin-top: 0.5rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .volumeSlider {
+        width: 120px;
+    }
+}
