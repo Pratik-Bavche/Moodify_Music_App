@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+🚀 Project Launch: Moodify 🎧 – Your Mood. Your Music. Instantly.
+I’m thrilled to announce the completion of my full-stack project Moodify, an AI-Powered Mood-Based Music Player designed to enhance user experience by detecting mood and recommending songs accordingly.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🔧 Tech Stack Used:
 
-## Available Scripts
+Frontend: React.js, Tailwind CSS, Framer Motion, React Router
 
-In the project directory, you can run:
+Backend: Node.js, Express.js
 
-### `npm start`
+Database: MongoDB + Mongoose
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+APIs & Tools:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Mood detection using TensorFlow.js / face-api.js (optional depending on your implementation)
 
-### `npm test`
+Spotify / YouTube API for music suggestions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Axios for API communication
 
-### `npm run build`
+JWT Authentication for secure login
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Toastify for notifications
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Dark mode toggle & responsive UI
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+🧠 Key Features:
 
-### `npm run eject`
+Real-time mood detection via webcam (or user input)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Auto music recommendations based on detected mood (happy, sad, calm, energetic, etc.)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Search and play functionality
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Clean, animated user interface
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+User login/signup and dashboard
 
-## Learn More
+💡 Challenges Faced:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Integrating mood detection with a stable UI
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Handling media API rate limits and streaming rights
 
-### Code Splitting
+Ensuring a smooth user experience across devices
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Syncing authentication and mood results with song data in real-time
