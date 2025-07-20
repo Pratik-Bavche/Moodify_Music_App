@@ -1,7 +1,7 @@
 # Project Launch: Moodify 🎧 – Your Mood. Your Music. Instantly.
 I’m thrilled to announce the completion of my full-stack project Moodify, an AI-Powered Mood-Based Music Player designed to enhance user experience by detecting mood and recommending songs accordingly.
 
-# Tech Stack Used:
+# Tech Stack Used: 
 Frontend: React.js, Tailwind CSS, Framer Motion, React Router
 
 Backend: Node.js, Express.js
