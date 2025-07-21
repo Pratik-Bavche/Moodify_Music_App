@@ -10,7 +10,7 @@ Database: MongoDB + Mongoose
 
 # APIs & Tools:
 Mood detection using TensorFlow.js / face-api.js (optional depending on your implementation)
-
+     
 Spotify / YouTube API for music suggestions
 
 Axios for API communication
